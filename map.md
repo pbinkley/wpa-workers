@@ -58,6 +58,7 @@ map: yes
   var workers = [
     {% for worker in site.data.workers %}
       {"holc_id": "{{ worker.holc_id }}",
+      "id": "{{ worker.id }}",
       "name": "{{ worker.signature }}",
       "url": "{{ worker.url }}", 
       "sex": "{{ worker.sex_9 }}", 
@@ -78,7 +79,8 @@ map: yes
         "<th>Occupation</th><th>Industry</th></tr>";
       
       these_workers.forEach(x => output += 
-        "<tr><td><a href='" + x["url"] + "'>" + x["name"] + "</a>" +
+        "<tr><td>" + x["id"] + ": " +
+        "<a href='" + x["url"] + "'>" + x["name"] + "</a>" +
         "</td><td>" + x["sex"] +
         "</td><td>" + x["race"] +
         "</td><td>" + x["age"] +
@@ -165,7 +167,7 @@ map: yes
       {% assign holc = site.data.holc | where: "id", holc_id | first %}
 	L.marker([{{ worker.latitude }}, {{ worker.longitude }}], {icon: icons["{{ worker.holc_id | slice: 0 }}"]})
     .bindPopup(
-      "<b>{{ worker.signature }}</b><br>{{ worker.sex_9 }}, " + 
+      "<b>{{ worker.id }}. {{ worker.signature }}</b><br>{{ worker.sex_9 }}, " + 
       "{{ worker.race_10 }}, {{ worker.age_11 | floor }}<br>" + 
       "\"{{ worker.occupation_28 }}\"<br>\"{{ worker.industry_29 }}\"<br>" + 
       "<b>{{ holc_id }}: {{ holc.name }}</b>")

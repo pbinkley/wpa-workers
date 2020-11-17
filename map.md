@@ -9,6 +9,8 @@ map: yes
  
  <script>
 
+  var fragment = location.hash.replace(/^#/, '');
+
 	var map = L.map('mapid');
 
 	L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
@@ -91,50 +93,71 @@ map: yes
   }
 
   var highlightedLayer = null;
+  var layerIndex = {}
   
+  function clickFeature(holc_id) {
+
+    var holc_layer = layerIndex[holc_id];
+    var holc_properties = holc_layer.feature.properties;
+    var holc_data = holc_properties.area_description_data;
+
+    var holc_div = document.getElementById('holc_data');
+    
+    // display data
+    holc_div.innerHTML = "<h3>HOLC Data: " + holc_properties.holc_id + "</h3>" +
+      "<dt>Name</dt><dd>" + holc_data['9'].replace(/\ (1st|2nd|3rd|4th).*/, '') + "</dd>" + 
+      "<dt>Class</dt><dd>" + holc_data['1b'] + "</dd>" +
+      "<dt>Nationalities</dt><dd>" + holc_data['1c'] + "</dd>" +
+      "<dt>Blacks</dt><dd>" + holc_data['1d'] + "</dd>" +
+      "<dt>WPA Workers</dt><dd>" + workerTable(holc_properties.holc_id) + "</dd>" +
+      "<dt>Description</dt><dd>" + holc_data['8'] + "</dd>";
+
+    if (highlightedLayer) {
+      // unhighlight the selected layer
+      highlightedLayer.setStyle( {fillOpacity: 0.2});
+    }
+
+    if (holc_layer === highlightedLayer) {
+      // clear current selection without changing bounds
+      highlightedLayer = null;
+      holc_div.innerHTML = "";
+      document.location.hash = "";
+    }
+    else {
+      // highlight current selection and set bounds
+      holc_layer.setStyle({fillOpacity: 0.5}); 
+      highlightedLayer = holc_layer;
+      map.fitBounds(holc_layer.getBounds());
+      document.location.hash = holc_id;
+    }  
+  }
+
   $.getJSON("{{ site.baseurl }}/assets/OHCleveland1939.geojson", function(data) {
     holc_layer = L.geoJson(data, {
       style: function(feature) {
-        return {fillColor: holcColor[feature.properties.holc_grade], fillOpacity: 0.2, opacity: 1, weight: 1, color: 'grey'}
+        return {
+          fillColor: holcColor[feature.properties.holc_grade],
+          fillOpacity: 0.2,
+          opacity: 1,
+          weight: 1,
+          color: 'grey'
+        }
       },
-      onEachFeature: function onEachFeature(feature, layer) {
-
+      onEachFeature: function(feature, layer) {
+        layerIndex[layer.feature.properties.holc_id] = layer;
         layer.on('click', function (e) {
-          // holc data: e.sourceTarget.feature.properties.area_description_data
-          var holc_div = document.getElementById('holc_data');
-          var holc = e.sourceTarget.feature.properties;
-          var holc_data = holc.area_description_data;
-          
-          // display data
-          // TODO: list workers in this area
-          holc_div.innerHTML = "<h3>HOLC Data: " + holc.holc_id + "</h3>" +
-            "<dt>Name</dt><dd>" + holc_data['9'].replace(/\ (1st|2nd|3rd|4th).*/, '') + "</dd>" + 
-            "<dt>Class</dt><dd>" + holc_data['1b'] + "</dd>" +
-            "<dt>Nationalities</dt><dd>" + holc_data['1c'] + "</dd>" +
-            "<dt>Blacks</dt><dd>" + holc_data['1d'] + "</dd>" +
-            "<dt>WPA Workers</dt><dd>" + workerTable(holc.holc_id) + "</dd>" +
-            "<dt>Description</dt><dd>" + holc_data['8'] + "</dd>";
-
-          if (highlightedLayer) {
-            // unhighlight the selected layer
-            highlightedLayer.setStyle( {fillOpacity: 0.2});
-          }
-
-          if (layer === highlightedLayer) {
-            // clear current selection without changing bounds
-            highlightedLayer = null;
-            holc_div.innerHTML = "";
-          }
-          else {
-            // highlight current selection and set bounds
-            layer.setStyle({fillOpacity: 0.5}); 
-            highlightedLayer = layer;
-            map.fitBounds(layer.getBounds());
-          }
+          clickFeature(layer.feature.properties.holc_id);
         });
       }
     }).addTo(map);
     map.fitBounds(holc_layer.getBounds());
+    if (fragment) {
+      if (Object.keys(layerIndex).includes(fragment)) {
+        clickFeature(fragment);
+      } else {
+        console.log("Bad fragment: " + fragment);
+      }
+    }
   });
 
   {% for worker in site.data.workers %}

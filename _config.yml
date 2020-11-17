@@ -20,8 +20,8 @@
 
 title:            'WPA Workers and Redlining'
 description:      'WPA White Collar Workers in Cleveland, April 1940'
-url:              'https://pbinkley.github.io/wpa-workers-and-redlining/'
-baseurl:          ''
+url:              'https://pbinkley.github.io'
+baseurl:          '/wpa-workers'
 copyright:        '© Peter Binkley 2020'
 logo:             '/assets/logo.png'
 

@@ -71,9 +71,8 @@ map: yes
   
   function workerTable(holc_id) {
     var these_workers = workers.filter(x => x.holc_id === holc_id);
-    console.log(these_workers);
     if (these_workers.length == 0) {
-      return "";
+      return "None";
     } else {
       output = "<table><tr><th>Name</th><th>Sex</th><th>Race</th><th>Age</th>" +
         "<th>Occupation</th><th>Industry</th></tr>";

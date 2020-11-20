@@ -1,0 +1,5 @@
+---
+layout: none
+---
+
+{"@context":"http://iiif.io/api/image/2/context.json","@id":"{{ '/' | absolute_url }}img/derivatives/iiif/images/doc9031_9031_002","protocol":"http://iiif.io/api/image","width":1008,"height":1313,"sizes":[{"width":1008,"height":1313},{"width":250,"height":326},{"width":1140,"height":1485},{"width":90,"height":117}],"profile":["http://iiif.io/api/image/2/level0.json",{"supports":["cors","sizeByWhListed","baseUriRedirect"]}],"tiles":[{"width":512,"scaleFactors":[1,2,4,8]}]}

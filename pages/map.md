@@ -1,6 +1,8 @@
 ---
 layout: page
+title: Map of Cleveland
 show_title: false
+permalink: '/map/'
 map: yes
 ---
 
@@ -130,6 +132,8 @@ map: yes
       highlightedLayer = holc_layer;
       map.fitBounds(holc_layer.getBounds());
       document.location.hash = holc_id;
+      // scroll map to top of screen
+      document.getElementById("wax-main").scrollIntoView(true);
     }  
   }
 

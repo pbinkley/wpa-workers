@@ -24,6 +24,7 @@ url:              'https://pbinkley.github.io'
 baseurl:          '/wpa-workers'
 copyright:        'Peter Binkley 2020'
 logo:             '/assets/logo.png'
+repository:       'pbinkley/wpa-workers'
 
 # ---------------------------------------------------------------
 # BUILD SETTINGS
@@ -108,6 +109,10 @@ search:
 # submenu via `sub`.
 
 menu:
+  - label: 'Map of Cleveland'
+    link: '/map/'
+  - label: 'Page Images'
+    link: '/documents/doc9031/'
   - label: 'About'
     sub:
       - label: 'Wax'
@@ -116,18 +121,6 @@ menu:
         link: 'https://minicomp.github.io/wiki/wax/'
       - label: 'Credits'
         link: '/credits/'
-  - label: 'Exhibits'
-    sub:
-      - label: 'Inline Parallax Image'
-        link: '/exhibits/a/'
-      - label: 'Inline Image References'
-        link: '/exhibits/b/'
-  - label: 'Browse'
-    link: '/collection/'
-  - label: 'Search'
-    link: '/search/'
-  - label: 'Reuse'
-    link: '/reuse/'
 
 # --------------------------------------------------------------
 # SITE FOOTER SETTINGS

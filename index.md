@@ -2,15 +2,18 @@
 layout: page
 show_title: false
 banner:
-  collection: qatar
-  pid: obj10
-  y: 25%
+  collection: documents
+  pid: doc9031
+  y: 43%
   height: '500px'
 ---
 
-__Wax__ is a [minimal computing](http://go-dh.github.io/mincomp/) project for producing digital exhibitions focused on longevity, low costs, and flexibility. Our underlying technology is made to learn and to teach, and can produce beautifully rendered, high-quality image collections and scholarly exhibits. To start using Wax, please see our [documentation](https://minicomp.github.io/wiki/#/wax/) for installation instructions and more.
+> Cleveland, Ohio  
+> April 12, 1940
 
-The collection items in this demo are from The Museum of Islamic Art, Qatar, (courtesy of [WikiMedia](https://commons.wikimedia.org/wiki/Category:Google_Art_Project_works_in_The_Museum_of_Islamic_Art,_Qatar) and [Google Art Project](https://www.google.com/culturalinstitute/about/artproject/)) and The Qatar National Library (via [World Digital Library](https://www.wdl.org/en/)).
+> We, the undersigned, workers on the Court Records Digest Project, under the supervision of William Hutchins, desire to express our sincerest sympathy with Mrs. Binkley for the untimely death of Dr. Robert Binkley, and our deep sense of loss to W.P.A. Research.
+
+> We, who know no desperate words or acts, no ultimatums, nor any easier alternatives, have, through the greatness of his mind and heart and enthusiasm, been allowed to work with the hope that each may be rendered his or her reward "according as his work is." 
 
 ### Browse the Collection
 

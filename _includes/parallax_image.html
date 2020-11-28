@@ -8,14 +8,16 @@
 {%- capture style -%}
   background-image: url('{{ image | absolute_url }}');
   background-position: 0% {{ include.y | default: '15%' }};
-
+  {% if include.clickable != '' %}
+  cursor: pointer;
+  {% endif %}
   {% if include.height %}
   height: {{ include.height }} !important;
   {% endif %}
 {%- endcapture -%}
 
 <div class='wax-parallax full-width {% if page.banner %}top-banner{% else %}inline-parallax{% endif %}'>
-  <div class='parallax-image' style="{{ style | strip }}"></div>
+  <div id='parallax-image' class='parallax-image' style="{{ style | strip }}"></div>
 
   {% if item.label %}
   <div class='parallax-caption'>
@@ -25,3 +27,12 @@
   </div>
   {% endif %}
 </div>
+
+{% if include.clickable %}
+<script>
+$('#parallax-image').click(function(){
+  window.location='{{ item.url | absolute_url }}';
+  return false;
+});
+</script>
+{% endif %}

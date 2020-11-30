@@ -1,0 +1,85 @@
+---
+uri: "{{ '/' | absolute_url }}img/derivatives/iiif/annotation/doc9031_1.json"
+collection: documents
+canvas: '1'
+label: doc9031_1
+target: "{{ '/' | absolute_url }}img/derivatives/iiif/canvas/doc9031_1.json"
+resources:
+- xywh: '127,633,378,40'
+  chars: "<h4>1: S.J. Bell</h4><p><em>Census Data</em>: occupation: 'Editor W.P.A.';
+    industry: 'Local W.P.A. Project'</p>"
+- xywh: '127,673,378,40'
+  chars: "<h4>2: Ruth Carter</h4><p><em>Census Data</em>: occupation: 'Editing W.P.A.';
+    industry: 'News Paper'</p>"
+- xywh: '127,713,378,40'
+  chars: "<h4>3: J.M. Papp</h4><p><em>Census Data</em>: occupation: ''; industry:
+    ''</p>"
+- xywh: '127,753,378,40'
+  chars: "<h4>4: Hy Newmark</h4><p><em>Census Data</em>: occupation: 'editor'; industry:
+    'PWA Public Record Project'</p>"
+- xywh: '127,793,378,40'
+  chars: "<h4>5: Margaret Buttrin</h4><p><em>Census Data</em>: occupation: ''; industry:
+    ''</p>"
+- xywh: '127,833,378,40'
+  chars: "<h4>6: Sarah Ehrlich</h4><p><em>Census Data</em>: occupation: 'Senior Clk';
+    industry: 'WPA Court Res'</p>"
+- xywh: '127,873,378,40'
+  chars: "<h4>7: Elizabeth Campbell</h4><p><em>Census Data</em>: occupation: 'Laborer';
+    industry: 'WPA'</p>"
+- xywh: '127,913,378,40'
+  chars: "<h4>8: Harriet Wolfe</h4><p><em>Census Data</em>: occupation: 'Clerk'; industry:
+    'WPA'</p>"
+- xywh: '127,953,378,40'
+  chars: "<h4>9: Robert B. Lynch</h4><p><em>Census Data</em>: occupation: 'Abstractor';
+    industry: 'County Record Digest Project'</p>"
+- xywh: '127,993,378,40'
+  chars: "<h4>10: George R. Trivison</h4><p><em>Census Data</em>: occupation: '';
+    industry: ''</p>"
+- xywh: '127,1033,378,40'
+  chars: "<h4>11: Walter J. Garrigan</h4><p><em>Census Data</em>: occupation: 'County
+    Record Department'; industry: 'Record W.P.A.'</p>"
+- xywh: '127,1073,378,40'
+  chars: "<h4>12: Ruth Phelps</h4><p><em>Census Data</em>: occupation: 'Research Assistant';
+    industry: 'Court Records W.P.A.'</p>"
+- xywh: '127,1113,378,40'
+  chars: "<h4>13: John Szczerbacki</h4><p><em>Census Data</em>: occupation: 'Research
+    Worker'; industry: 'W.P.A. research project'</p>"
+- xywh: '505,633,378,40'
+  chars: "<h4>14: James O. Fitzgerald</h4><p><em>Census Data</em>: occupation: 'Court
+    R. Diezel(?)'; industry: 'Public Libery'</p>"
+- xywh: '505,673,378,40'
+  chars: "<h4>15: Joseph Beregi</h4><p><em>Census Data</em>: occupation: 'Clerical';
+    industry: 'WPA: ____ Office Pay ___'</p>"
+- xywh: '505,713,378,40'
+  chars: "<h4>16: Virginia Powell</h4><p><em>Census Data</em>: occupation: ''; industry:
+    ''</p>"
+- xywh: '505,753,378,40'
+  chars: "<h4>17: Richard D. Black</h4><p><em>Census Data</em>: occupation: 'Stenographer';
+    industry: 'Office WPA'</p>"
+- xywh: '505,793,378,40'
+  chars: "<h4>18: Jeanette Northrop</h4><p><em>Census Data</em>: occupation: 'telephone
+    solicitor'; industry: 'foreign newspaper'</p>"
+- xywh: '505,833,378,40'
+  chars: "<h4>19: Paul K. Breese</h4><p><em>Census Data</em>: occupation: 'Traffic
+    Manager'; industry: 'Aircraft parts mfg'</p>"
+- xywh: '505,873,378,40'
+  chars: "<h4>20: Ethel A. Piper</h4><p><em>Census Data</em>: occupation: 'Statistics
+    / Court records'; industry: 'City court house'</p>"
+- xywh: '505,913,378,40'
+  chars: "<h4>21: Kathryn Pickheimer</h4><p><em>Census Data</em>: occupation: '';
+    industry: ''</p>"
+- xywh: '505,953,378,40'
+  chars: "<h4>22: Florence Cole Saiter</h4><p><em>Census Data</em>: occupation: 'Editorial
+    Lady'; industry: 'Court records'</p>"
+- xywh: '505,993,378,40'
+  chars: "<h4>23: Lottyce Adalayne Williams</h4><p><em>Census Data</em>: occupation:
+    'school teacher'; industry: 'public school'</p>"
+- xywh: '505,1033,378,40'
+  chars: "<h4>24: Pollie H. Parker</h4><p><em>Census Data</em>: occupation: 'Filer';
+    industry: 'Research Bureau'</p>"
+- xywh: '505,1073,378,40'
+  chars: "<h4>25: Commodore Irving Cain</h4><p><em>Census Data</em>: occupation: 'Research
+    assistant'; industry: 'W.P.A. Scholarship project'</p>"
+- xywh: '505,1113,378,40'
+  chars: "<h4>26: Zelda Hassin</h4><p><em>Census Data</em>: occupation: 'Typist';
+    industry: 'County Project'</p>"

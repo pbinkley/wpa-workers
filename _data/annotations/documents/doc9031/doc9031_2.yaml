@@ -1,0 +1,148 @@
+---
+uri: "{{ '/' | absolute_url }}img/derivatives/iiif/annotation/doc9031_2.json"
+collection: documents
+canvas: '2'
+label: doc9031_2
+target: "{{ '/' | absolute_url }}img/derivatives/iiif/canvas/doc9031_2.json"
+resources:
+- xywh: '132,130,378,40'
+  chars: "<h4>27: Elise Rudolph</h4><p><em>Census Data</em>: occupation: 'Typist';
+    industry: 'Law Project'</p>"
+- xywh: '132,170,378,40'
+  chars: "<h4>28: Emily Keatovil</h4><p><em>Census Data</em>: occupation: 'WPA Typing';
+    industry: 'WPA Office'</p>"
+- xywh: '132,210,378,40'
+  chars: "<h4>29: Lillian Chesser</h4><p><em>Census Data</em>: occupation: 'Typist';
+    industry: 'WPA Office'</p>"
+- xywh: '132,250,378,40'
+  chars: "<h4>30: Helen J. Korosi</h4><p><em>Census Data</em>: occupation: ''; industry:
+    ''</p>"
+- xywh: '132,290,378,40'
+  chars: "<h4>31: Frances Vadnal</h4><p><em>Census Data</em>: occupation: ''; industry:
+    ''</p>"
+- xywh: '132,330,378,40'
+  chars: "<h4>32: Alena Quattrocchi</h4><p><em>Census Data</em>: occupation: 'Typist';
+    industry: 'WPA District Office'</p>"
+- xywh: '132,370,378,40'
+  chars: "<h4>33: Gladys Gulliver</h4><p><em>Census Data</em>: occupation: 'Stenographer';
+    industry: 'Plumbing'</p>"
+- xywh: '132,410,378,40'
+  chars: "<h4>34: Margaret E. Hallman</h4><p><em>Census Data</em>: occupation: '';
+    industry: ''</p>"
+- xywh: '132,450,378,40'
+  chars: "<h4>35: Al Abrams</h4><p><em>Census Data</em>: occupation: ''; industry:
+    ''</p>"
+- xywh: '132,490,378,40'
+  chars: "<h4>36: Bernard Plummer</h4><p><em>Census Data</em>: occupation: 'Copy Clerk';
+    industry: 'WPA Project Municipal Court'</p>"
+- xywh: '132,530,378,40'
+  chars: "<h4>37: Gertrude Graab</h4><p><em>Census Data</em>: occupation: 'Seamstress';
+    industry: 'Sewing Project'</p>"
+- xywh: '132,570,378,40'
+  chars: "<h4>38: Burt Harrison</h4><p><em>Census Data</em>: occupation: 'accountant';
+    industry: 'WPA'</p>"
+- xywh: '132,610,378,40'
+  chars: "<h4>39: Fred C. Secor</h4><p><em>Census Data</em>: occupation: 'Compiler
+    Writer'; industry: 'W.P.A. Project'</p>"
+- xywh: '132,650,378,40'
+  chars: "<h4>40: Nelson Charms</h4><p><em>Census Data</em>: occupation: 'Office Worker';
+    industry: 'Project -WPA'</p>"
+- xywh: '132,690,378,40'
+  chars: "<h4>41: H.D. Seixan</h4><p><em>Census Data</em>: occupation: ''; industry:
+    ''</p>"
+- xywh: '132,730,378,40'
+  chars: "<h4>42: Edw. Gub</h4><p><em>Census Data</em>: occupation: ''; industry:
+    ''</p>"
+- xywh: '132,770,378,40'
+  chars: "<h4>43: Alfred L. Maynes</h4><p><em>Census Data</em>: occupation: 'Accountant';
+    industry: 'Tire Distribut'</p>"
+- xywh: '132,810,378,40'
+  chars: "<h4>44: Clifton DeWeese</h4><p><em>Census Data</em>: occupation: 'abstractor';
+    industry: 'research project'</p>"
+- xywh: '132,850,378,40'
+  chars: "<h4>45: H.M.Aikman</h4><p><em>Census Data</em>: occupation: 'Office Clerk';
+    industry: 'WPA District Office'</p>"
+- xywh: '132,890,378,40'
+  chars: "<h4>46: Douglas C. Taylor</h4><p><em>Census Data</em>: occupation: 'laborer';
+    industry: 'W.P.A.'</p>"
+- xywh: '132,930,378,40'
+  chars: "<h4>47: Homer S. Ensign</h4><p><em>Census Data</em>: occupation: ''; industry:
+    ''</p>"
+- xywh: '132,970,378,40'
+  chars: "<h4>48: Fred G. Sprague</h4><p><em>Census Data</em>: occupation: 'abstracter
+    and writer'; industry: 'WPA Project'</p>"
+- xywh: '132,1010,378,40'
+  chars: "<h4>49: Robert Sherman</h4><p><em>Census Data</em>: occupation: 'laborer';
+    industry: 'WPA'</p>"
+- xywh: '132,1050,378,40'
+  chars: "<h4>50: C.C. Schuler</h4><p><em>Census Data</em>: occupation: 'Court Abstracting';
+    industry: 'Historical Work / WPA Project'</p>"
+- xywh: '132,1090,378,40'
+  chars: "<h4>51: Lawrence F. Wood</h4><p><em>Census Data</em>: occupation: 'Skilled
+    asst'; industry: 'WPA research proj'</p>"
+- xywh: '132,1130,378,40'
+  chars: "<h4>52: Harold A. Davis</h4><p><em>Census Data</em>: occupation: '(empty)';
+    industry: '(empty)'</p>"
+- xywh: '132,1170,378,40'
+  chars: "<h4>53: Frank J. Stastny</h4><p><em>Census Data</em>: occupation: 'File
+    Clerk'; industry: 'city court records'</p>"
+- xywh: '132,1210,378,40'
+  chars: "<h4>54: James R. Leathers</h4><p><em>Census Data</em>: occupation: ''; industry:
+    ''</p>"
+- xywh: '510,130,378,40'
+  chars: "<h4>55: Clarence A. Craig</h4><p><em>Census Data</em>: occupation: 'Abstractor';
+    industry: 'WPA'</p>"
+- xywh: '510,170,378,40'
+  chars: "<h4>56: George Nesheff</h4><p><em>Census Data</em>: occupation: 'mechanical
+    engineer'; industry: 'WPA statistical'</p>"
+- xywh: '510,210,378,40'
+  chars: "<h4>57: Christopher Cooper</h4><p><em>Census Data</em>: occupation: 'senior
+    clerk'; industry: 'court house'</p>"
+- xywh: '510,250,378,40'
+  chars: "<h4>58: Ven. Dlouhy</h4><p><em>Census Data</em>: occupation: 'Office clerk';
+    industry: 'research project work'</p>"
+- xywh: '510,290,378,40'
+  chars: "<h4>59: Frank Lemon</h4><p><em>Census Data</em>: occupation: 'Research Worker';
+    industry: 'Court Archives Filing Projects'</p>"
+- xywh: '510,330,378,40'
+  chars: "<h4>60: Harold T. James</h4><p><em>Census Data</em>: occupation: 'Clerk';
+    industry: 'Historical Research'</p>"
+- xywh: '510,370,378,40'
+  chars: "<h4>61: Samuel J. August</h4><p><em>Census Data</em>: occupation: '(empty)';
+    industry: '(empty)'</p>"
+- xywh: '510,410,378,40'
+  chars: "<h4>62: Alphonse J. Wiegand</h4><p><em>Census Data</em>: occupation: 'clerical';
+    industry: '(empty)'</p>"
+- xywh: '510,450,378,40'
+  chars: "<h4>63: Eugene Cameron</h4><p><em>Census Data</em>: occupation: ''; industry:
+    ''</p>"
+- xywh: '510,490,378,40'
+  chars: "<h4>64: Steve Barry</h4><p><em>Census Data</em>: occupation: ''; industry:
+    ''</p>"
+- xywh: '510,530,378,40'
+  chars: "<h4>65: E.J. Burke</h4><p><em>Census Data</em>: occupation: 'Bookkeeper';
+    industry: 'WPA office'</p>"
+- xywh: '510,570,378,40'
+  chars: "<h4>66: E.J. Healy</h4><p><em>Census Data</em>: occupation: 'hist Research';
+    industry: 'Court House'</p>"
+- xywh: '510,610,378,40'
+  chars: "<h4>67: V. Labtitte</h4><p><em>Census Data</em>: occupation: ''; industry:
+    ''</p>"
+- xywh: '510,650,378,40'
+  chars: "<h4>68: C.D. Moore</h4><p><em>Census Data</em>: occupation: ''; industry:
+    ''</p>"
+- xywh: '510,690,378,40'
+  chars: "<h4>69: S.A. Sikorski</h4><p><em>Census Data</em>: occupation: ''; industry:
+    ''</p>"
+- xywh: '510,730,378,40'
+  chars: "<h4>70: Lewis Richards</h4><p><em>Census Data</em>: occupation: 'Senior
+    Clerk'; industry: 'WPA Court Record Poject'</p>"
+- xywh: '510,770,378,40'
+  chars: "<h4>71: Walter Loescher</h4><p><em>Census Data</em>: occupation: 'Research
+    assistance'; industry: 'WPA'</p>"
+- xywh: '510,810,378,40'
+  chars: "<h4>72: A.D. Nollins</h4><p><em>Census Data</em>: occupation: ''; industry:
+    ''</p>"
+- xywh: '510,850,378,40'
+  chars: "<h4>73: Leona Wilson</h4><p><em>Census Data</em>: occupation: ''; industry:
+    ''</p>"

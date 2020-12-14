@@ -1,12 +1,18 @@
-PATH
-  remote: .
+GIT
+  remote: https://github.com/pbinkley/wax_iiif.git
+  revision: 8fc5a5217029c20f86e32a0f8f58bdbf503b0b38
+  branch: perms
   specs:
-    wax_theme (1.0.1)
-      jekyll (~> 4.1)
-      wax_tasks (~> 1.1)
+    wax_iiif (0.2.0)
+      mini_magick (~> 4.9)
+      parallel (~> 1.17)
+      progress_bar (~> 1.3)
+      rainbow (~> 3.0)
 
-PATH
-  remote: /home/pbinkley/Projects/wax/recipebook/wax_tasks
+GIT
+  remote: https://github.com/pbinkley/wax_tasks.git
+  revision: c0f3fcd205f12cadb050054d00c78155d5d08b85
+  branch: annotationlists
   specs:
     wax_tasks (1.1.2)
       progress_bar (~> 1.3)
@@ -16,13 +22,11 @@ PATH
       wax_iiif (~> 0.2)
 
 PATH
-  remote: /home/pbinkley/Projects/wax/wax_iiif-pbinkley-fork
+  remote: .
   specs:
-    wax_iiif (0.2.0)
-      mini_magick (~> 4.9)
-      parallel (~> 1.17)
-      progress_bar (~> 1.3)
-      rainbow (~> 3.0)
+    wax_theme (1.0.1)
+      jekyll (~> 4.1)
+      wax_tasks (~> 1.1)
 
 GEM
   remote: https://rubygems.org/

@@ -115,6 +115,8 @@ menu:
     link: '/map/'
   - label: 'Page Images'
     link: '/documents/doc9031/'
+  - label: 'Charts'
+    link: '/charts/'
   - label: 'About'
     sub:
       - label: 'Wax'

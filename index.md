@@ -8,7 +8,7 @@ banner:
   height: '500px'
 ---
 
-This site is a preliminary sharing of some research on a WPA white-collar project in Cleveland. It uses a letter signed by 73 workers in the Court Records project to establish a set of demographic data from the 1940 census as a entry point to investigating the conditions of the workers and their engagement with the project. It is very much a work in progress.
+This site is a preliminary sharing of some research on a WPA white-collar project in Cleveland. It uses a letter signed by 73 workers in the Court Records project to establish a set of demographic data from the 1940 census as an entry point to investigating the conditions of the workers and their engagement with the project. It is very much a work in progress.
 
 ### The Letter
 

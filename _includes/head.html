@@ -5,6 +5,10 @@
     {{ site.title }}{% if page.label %} | {{ page.label }}{% elsif page.title %} | {{ page.title }}{% endif %}
   </title>
 
+  <meta property="og:title" content="{{ site.title }}{% if page.label %} | {{ page.label }}{% elsif page.title %} | {{ page.title }}{% endif %}" />
+  <meta property="og:type" content="map" />
+  <meta property="og:url" content="{{ page.url | absolute_url }}" />
+
   <link rel='canonical' href='{{ page.url | absolute_url }}'/>
   <link rel='icon' type='image/png' href="{{ 'img/logo.png' | absolute_url }}">
   <link rel='stylesheet' href="{{ '/assets/styles.css' | absolute_url }}"/>

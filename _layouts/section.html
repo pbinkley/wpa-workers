@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<div id="mapid"></div>
+<p>Return to <a href="{{ site.baseurl }}/map/">main map</a></p>
+
+<script>var section_id = "{{ page.section }}";</script>
+
+{% assign holc_data = site.data.holc | where: "id", page.section | first %}
+
+<h3>{{ page.title }}</h3>
+
+<dt>Name</dt><dd>{{ holc_data.name }}</dd>
+<dt>Class</dt><dd>{{ holc_data.class }}</dd>
+<dt>Nationalities</dt><dd>{{ holc_data.nationalities }}</dd>
+<dt>Blacks</dt><dd>{{ holc_data.blacks }}</dd>
+<dt>WPA Workers</dt><dd>
+  
+  {% assign workers = site.data.workers | where: "holc_id", page.section %}
+
+  {% if workers.size > 0 %}
+      <table class="workers">
+      <tr><th>ID</th><th>Name</th><th>Sex</th><th>Race</th><th>Age</th>
+        <th>Occupation</th><th>Industry</th></tr>
+    {% for worker in workers %}      
+        <tr>
+          <td>{{ worker["id"] }}</td>
+          <td><a href='{{ worker["id"] }}'>{{ worker["signature"] }}</a></td>
+          <td>{{ worker["sex_9"] }}</td>
+          <td>{{ worker["race_10"] }}</td>
+          <td>{{ worker["age_11"] | round }}</td>
+          <td>"{{ worker["occupation_28"] }}"</td>
+          <td>"{{ worker["industry_29"] }}"</td>
+        </tr>
+      {% endfor %}
+        
+      </table>
+  {% else %}
+    None
+  {% endif %}
+</dd>
+<dt>Description</dt><dd>{{ holc_data.description }}</dd>
+
+<script src="{{ site.baseurl }}/assets/map.js"></script>

@@ -47,5 +47,9 @@ $footer-height:   250px;
 font & asset import
 */
 
+table.workers th,td {
+  padding: 0 5px;
+  vertical-align: top;
+}
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&font-display=auto');
 @import 'wax';

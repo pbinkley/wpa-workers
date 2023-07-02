@@ -6,6 +6,8 @@ permalink: '/map/'
 map: yes
 ---
 
- <div id="mapid"></div>
+<div id="mapid"></div>
  
- <script src="{{ site.baseurl }}/assets/map.js"></script>
+<script type='text/javascript' async defer>
+  initialize();
+</script>

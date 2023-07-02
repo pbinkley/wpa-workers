@@ -2,18 +2,15 @@
 permalink: /assets/map.js
 ---
 
-  var map = L.map('mapid');
+  var map = new L.Map("mapid", {
+      center: new L.LatLng(37.7, -122.4),
+      zoom: 12
+  });
+  map.attributionControl.addAttribution('Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.');
+  map.addLayer(new L.StamenTileLayer("toner", {
+                        detectRetina: true
+                    }))
 
-  L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoicGJpbmtsZXkiLCJhIjoiY2xqa2VnMzJxMGhhazNmbDV2eDMzbTVtaiJ9.TOAKD8tLddNL8ETVB9lteg', {
-    maxZoom: 18,
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-      '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-      'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    id: 'mapbox/streets-v11',
-    tileSize: 512,
-    zoomOffset: -1
-  }).addTo(map);
-  
   var myStyle = {
     "color": "#ff7800",
     "weight": 5,

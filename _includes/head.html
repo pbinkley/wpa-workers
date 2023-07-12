@@ -27,15 +27,10 @@
                 center: new L.LatLng(37.8, -122.4),
                 zoom: 10
             });
-            /*
-            map.addLayer(new L.StamenTileLayer(layer, {
-                detectRetina: true
-            }));
-            */
-L.tileLayer( 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-    subdomains: ['a','b','c']
-}).addTo( map );
+            L.tileLayer( 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+                subdomains: ['a','b','c']
+            }).addTo( map );
 
 
             var myStyle = {
@@ -78,7 +73,7 @@ L.tileLayer( 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
               style: function(feature) {
                 return {
                   fillColor: holcColor[feature.properties.holc_grade],
-                  fillOpacity: 0.2,
+                  fillOpacity: 0.3,
                   opacity: 1,
                   weight: 1,
                   color: 'grey'

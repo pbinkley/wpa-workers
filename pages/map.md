@@ -6,7 +6,7 @@ permalink: '/map/'
 map: yes
 ---
 
-<div id="mapid" style="height: 300px;"></div>
+<div id="mapid" style="height: 70vh;"></div>
  
 <script type='text/javascript' async defer>
   initialize();

@@ -2,10 +2,12 @@
 layout: default
 ---
 
-<div id="mapid"></div>
+<div id="mapid" style="height: 35vh;"></div>
+
 <p>Return to <a href="{{ site.baseurl }}/map/">main map</a></p>
 
 <script>var section_id = "{{ page.section }}";</script>
+<script defer src="{{ site.baseurl }}/assets/map.js"></script>
 
 {% assign holc_data = site.data.holc | where: "id", page.section | first %}
 
@@ -41,5 +43,3 @@ layout: default
   {% endif %}
 </dd>
 <dt>Description</dt><dd>{{ holc_data.description }}</dd>
-
-<script src="{{ site.baseurl }}/assets/map.js"></script>

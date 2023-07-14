@@ -6,10 +6,17 @@ permalink: /assets/map.js
       center: new L.LatLng(37.7, -122.4),
       zoom: 12
   });
-  map.attributionControl.addAttribution('Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.');
-  map.addLayer(new L.StamenTileLayer("toner", {
-                        detectRetina: true
-                    }))
+
+  L.tileLayer( 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      subdomains: ['a','b','c']
+  }).addTo( map );
+  map.addControl(new L.Control.Fullscreen({
+      title: {
+          'false': 'View Fullscreen',
+          'true': 'Exit Fullscreen'
+      }
+  }));
 
   var myStyle = {
     "color": "#ff7800",
@@ -72,7 +79,11 @@ permalink: /assets/map.js
       map.dragging.disable();
       map.options.scrollWheelZoom = "center";
       // highlight this section
-      layerIndex[section_id].setStyle({fillOpacity: 0.5}); 
+      layerIndex[section_id].setStyle({
+        fillOpacity: 0.5,
+        color: "#000000",
+        weight: 5
+      }); 
       // set minimum zoom
       map.options.minZoom = 12;
     }

@@ -11,12 +11,6 @@ layout: default
 
 {% assign holc_data = site.data.holc | where: "id", page.section | first %}
 
-<h3>{{ page.title }}</h3>
-
-<dt>Name</dt><dd>{{ holc_data.name }}</dd>
-<dt>Class</dt><dd>{{ holc_data.class }}</dd>
-<dt>Nationalities</dt><dd>{{ holc_data.nationalities }}</dd>
-<dt>Blacks</dt><dd>{{ holc_data.blacks }}</dd>
 <dt>WPA Workers</dt><dd>
   
   {% assign workers = site.data.workers | where: "holc_id", page.section %}
@@ -42,4 +36,14 @@ layout: default
     None
   {% endif %}
 </dd>
+
+<h3>{{ page.title }}</h3>
+
+<p class="infosource">The description below was produced for the Home Owners' Loan Corporation (HOLC) in the 1930s.</p>
+
+<dt>Name</dt><dd>{{ holc_data.name }}</dd>
+<dt>Class</dt><dd>{{ holc_data.class }}</dd>
+<dt>Nationalities</dt><dd>{{ holc_data.nationalities }}</dd>
+<dt>Blacks</dt><dd>{{ holc_data.blacks }}</dd>
+
 <dt>Description</dt><dd>{{ holc_data.description }}</dd>
